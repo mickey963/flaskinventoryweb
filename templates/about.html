@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <section class="about-section">
+        <h2>About Golden Threads</h2>
+        <p>
+            At <strong>Golden Threads</strong>, we don’t just sell clothes — we curate elegance. Our passion is in crafting a luxurious wardrobe for the bold, the refined, and the unapologetically unique. Whether it's red-carpet ready or casually royal, every piece tells a story of golden excellence.
+        </p>
+
+        <div class="about-gallery">
+            <img src="{{ url_for('static', filename='Images/erica-zhou-IHpUgFDn7zU-unsplash.jpg') }}" >
+            <img src="{{ url_for('static', filename='Images//marcus-loke-xXJ6utyoSw0-unsplash.jpg') }}" >
+        </div>
+
+        <div class="contact">
+            <p><strong>Contact us:</strong> <a href="mailto:Michael.opute9@gmail.com">Michael.opute9@gmail.com</a></p>
+        </div>
+    </section>
+</div>
+{% endblock %}

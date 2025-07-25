@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <section class="collection-section">
+        <h2>Our Luxury Collection</h2>
+        <div id="inventory" class="inventory-grid">
+            <!-- JS will load items here -->
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="add-section">
+        <h3>Add New Item</h3>
+        <form id="add-form" class="form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" step="0.01" id="price" placeholder="Price" required>
+            <input type="text" id="image" placeholder="Image URL">
+            <button type="submit">Add Item</button>
+        </form>
+    </section>
+</div>
+
+<!-- Edit Modal -->
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <h3>Edit Item</h3>
+        <form id="edit-form" class="form">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-name" placeholder="Name" required>
+            <input type="text" id="edit-description" placeholder="Description">
+            <input type="number" step="0.01" id="edit-price" placeholder="Price" required>
+            <input type="text" id="edit-image" placeholder="Image URL">
+            <button type="submit">Update Item</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <section class="collection-section">
+        <h3>More Items Coming Soon</h3>
+        <div id="inventory" class="inventory-grid">
+            <!-- JS will load items here -->
+        </div>
+    </section>
+{% endblock %}

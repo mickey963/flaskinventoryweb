@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question, want to partner, or just want to say hi — drop us a message below.</p>
+
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:Michael.opute9@gmail.com">Michael.opute9@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+2348064411880">08064411880</a></p>
+        </div>
+
+        <form class="form" method="POST" action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" style="width: 100%; max-width: 500px; padding: 10px; border-radius: 5px;" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+{% endblock %}
